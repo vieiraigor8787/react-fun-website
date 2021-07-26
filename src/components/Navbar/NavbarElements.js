@@ -74,7 +74,7 @@ export const NavItem = styled.li`
 `;
 
 export const NavLinks = styled(LinkScroll)`
-    color: var(--secundary-color);
+    color: #fff;
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -83,7 +83,10 @@ export const NavLinks = styled(LinkScroll)`
     cursor: pointer;
 
     &:active {
-        border-bottom: 3px solid #01bf71;
+        border-bottom: 3px solid var(--secundary-color);
+    }
+    &:hover {
+        color: var(--secundary-color)
     }
 `;
 
